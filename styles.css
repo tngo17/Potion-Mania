@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.move-title {
+    text-align: center;
+    font-family: 'Fondamento', sans-serif, cursive;
+    position: relative;
+    padding-top: 3rem;
+}
+.move-title span {
+    position: relative;
+    display: inline-block;
+    font-size: 6rem;
+    color: #fff;
+    animation: flip 2s 3;
+    animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
