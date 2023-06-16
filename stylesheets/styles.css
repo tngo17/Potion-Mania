@@ -105,7 +105,7 @@ body {
     }
   }
 
-/*body * {
+body * {
     opacity: 1;
     transition: opacity 0.5 ease;
 }
