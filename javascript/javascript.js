@@ -18,5 +18,5 @@ delayPlay.addEventListener('click', function() {
       
     setTimeout(function() {
         window.location.href = "../html/prologue.html"; // Replace with the URL of the new page
-      }, 5000);  
+      }, 2000);  
 });
