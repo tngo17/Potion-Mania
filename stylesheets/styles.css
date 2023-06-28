@@ -144,4 +144,40 @@ body *.vanish {
     }
   }
 
+.witch-house {
+    position: fixed;
+    opacity: 0;
+    animation: image-reveal 2s ease-in-out 6s forwards; 
+    height: auto;
+    width: 100%;
+    max-height: 400px;
+    max-width: 600px;
+    margin-top: 50px;
+}
+ 
+@keyframes image-reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+.witch-house img {
+    display: block; /* ensures the image is a block element */
+    width: 100%; /* ensures the image width scales with the container */
+    height: auto; /* maintains the image's aspect ratio */
+  }
+
+.textbox1 {
+    position: fixed;
+    opacity: 0;
+    animation: image-reveal 2s ease-in-out 6s forwards; 
+    color:#fff;
+    height: auto;
+    width: 100%;
+    max-height: 400px;
+    max-width: 600px;
+    margin-top: 30rem;
+}
