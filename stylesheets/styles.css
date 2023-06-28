@@ -113,3 +113,35 @@ body * {
 body *.vanish {
     opacity: 0;
 }
+
+.pro-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-intro {
+    opacity: 0;
+    animation: reveal 7s forwards;
+    animation-delay: 1s;
+    color:#fff;
+    font-size: 4.5rem;
+    margin-block-start: 4.5em;
+}
+  
+  @keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateZ(-1px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(1px);
+    }
+  }
+
+
