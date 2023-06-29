@@ -1,2 +1,3 @@
 # Potion-Mania
-itch.io GAMEOFF 2022 Cliche
+Original Text-Based Choose Your Own Adventure Game
+Summary: 
