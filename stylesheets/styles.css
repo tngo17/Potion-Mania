@@ -1,6 +1,7 @@
-body {
+body, #content{
     font-family: 'Fondamento', 'Georgia';
     background-color: rgb(0, 0, 0);
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,21 +25,7 @@ body {
     font-size: 6rem;
     color: #fff;
     animation: flip 2s 3;
-    animation-delay: calc(.2s * var(--i))
-}
-@keyframes flip {
-    0%,80% {
-      transform: rotateY(360deg) 
-    }
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /*border: solid #fff;*/
-    height: 100%;
+    animation-delay: calc(.2s * var(--i))display;
     padding-top: 100px;
 }
 
@@ -141,7 +128,9 @@ body *.vanish {
     100% {
         opacity: 0;
         transform: translateZ(1px);
+        display: none;
     }
+    
   }
 
 .witch-house {
@@ -177,7 +166,42 @@ body *.vanish {
     color:#fff;
     height: auto;
     width: 100%;
-    max-height: 400px;
+    max-height: 1200px;
     max-width: 600px;
     margin-top: 30rem;
 }
+
+.textbox1 p {
+    font-size: 1.5rem;
+}
+
+.cottage-button-container {
+    display: block;
+    margin-top: 13rem;
+}
+
+#enter-cottage {
+    opacity: 0;
+    animation: show-text forwards;
+    animation-delay: 12s;
+    background-color:black;
+    color:#fff;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    padding: 5px 5px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#enter-cottage:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+@keyframes show-text {
+    to {
+      opacity: 1;
+    }
+  }
